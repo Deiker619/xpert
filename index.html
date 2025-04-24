@@ -10,7 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
     />
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- Navegacion -->
     <nav
       class="backdrop-blur-2xl dark:bg-gray-900 fixed w-full z-20 top-0 start-0"
@@ -104,7 +104,6 @@
         </div>
       </div>
     </nav>
-
     <!-- Header -->
     <div
       class="bg-white mt-20 mr-6 ml-6 rounded-2xl border-gray-400 overflow-hidden p-2"
@@ -199,8 +198,7 @@
         </div>
       </section>
     </div>
-    <!--  -->
-
+    <!--other section  -->
     <section class="bg-white mx-auto container">
       <div
         class="grid place-items-center px-4 mx-auto xl:gap-0 lg:py-16 lg:px-8 lg:grid-cols-12"
@@ -233,7 +231,11 @@
             </a>
           </div>
         </div>
-        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <div class="hidden lg:mt-0 lg:col-span-5 lg:flex relative">
+          <div
+          class="absolute w-52 h-40 -z-0  bg-blue-300 blur-[120px] bottom-0 left-0"
+        ></div>
+
           <figure class="max-w-lg relative">
             <img
               class="h-auto max-w-full rounded-lg"
@@ -276,6 +278,7 @@
         </div>
       </div>
     </section>
+    <!-- Personas -->
     <section class="h-[600px] flex flex-col mt-4">
       <!-- Title -->
       <div class="flex flex-col justify-center items-center">
@@ -299,16 +302,16 @@
         </p>
       </div>
 
-      <div class="w-full flex justify-center items-center relative">
+      <div class="w-full flex justify-center items-center  overflow-x-visible  relative">
         <div
           class="col-span-1 relative flex flex-col justify-center items-center -z-1 top-20"
         >
           <div class="absolute">
             <div
-              class="bg-gray-100 w-160 h-160 rounded-full p-4 flex justify-center items-center"
+              class="bg-gray-100 w-120 h-120 rounded-full p-4 flex justify-center items-center"
             ></div>
           </div>
-          <div class="bg-gray-200 w-140 h-140 rounded-full relative"></div>
+          <div class="bg-gray-200 w-100 h-100 rounded-full relative"></div>
         </div>
 
         <div
@@ -325,15 +328,19 @@
     </section>
 
     <!-- Card 0k -->
-    <section class="flex flex-col items-center h-[300px] w-full">
+    <section class="flex flex-col items-center h-[250px] w-full mb-20">
       <div
         class="flex flex-col bg-gray-900 rounded-3xl w-[80%] h-full justify-center items-center"
       >
-        <div class="grid grid-cols-9 gap-2 w-full h-full p-10">
-          <div class="bg-blue-500 col-span-3">a</div>
-          <div class="bg-white col-span-2">b</div>
-          <div class="bg-white col-span-2">c</div>
-          <div class="bg-white col-span-2">D</div>
+        <div class="grid grid-cols-9 gap-3 w-full h-full p-10">
+          <div class="bg-blue-500 p-2 col-span-3 rounded-md flex flex-col">
+            <div class="">
+              
+            </div>
+          </div>
+          <div class="bg-white p-2 col-span-2 rounded-md">b</div>
+          <div class="bg-white p-2 col-span-2 rounded-md">c</div>
+          <div class="bg-white p-2 col-span-2 rounded-md">D</div>
         </div>
       </div>
     </section>
